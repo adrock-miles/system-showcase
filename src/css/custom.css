@@ -1,0 +1,163 @@
+/**
+ * Docusaurus theme overrides — synced with our design token system
+ * Primary color: blue-600 (#2563eb) from tokens/primitives/color.json
+ */
+
+/* ─── Light mode ─────────────────────────────────────────────────────────── */
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.1);
+
+  /* Token system font stack */
+  --ifm-font-family-base: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', 'Fira Code', Consolas,
+    'Courier New', monospace;
+}
+
+/* ─── Dark mode ──────────────────────────────────────────────────────────── */
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+
+  --docusaurus-highlighted-code-line-bg: rgba(96, 165, 250, 0.15);
+}
+
+/* ─── Token swatch components ────────────────────────────────────────────── */
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.token-swatch {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.token-swatch__color {
+  height: 60px;
+  width: 100%;
+}
+
+.token-swatch__label {
+  padding: 6px 8px;
+  font-size: 11px;
+  font-family: var(--ifm-font-family-monospace);
+  line-height: 1.4;
+}
+
+.token-swatch__name {
+  font-weight: 600;
+  display: block;
+}
+
+.token-swatch__value {
+  color: var(--ifm-color-emphasis-600);
+  display: block;
+}
+
+/* ─── Spacing bar visualizer ─────────────────────────────────────────────── */
+.spacing-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 6px 0;
+}
+
+.spacing-bar {
+  background: var(--ifm-color-primary);
+  height: 20px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.spacing-label {
+  font-size: 13px;
+  font-family: var(--ifm-font-family-monospace);
+  min-width: 200px;
+}
+
+/* ─── Radius boxes ───────────────────────────────────────────────────────── */
+.radius-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 1rem 0;
+}
+
+.radius-box {
+  width: 80px;
+  height: 80px;
+  background: var(--ifm-color-primary);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  padding: 4px;
+}
+
+/* ─── Shadow boxes ───────────────────────────────────────────────────────── */
+.shadow-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 1.5rem 0;
+}
+
+.shadow-box {
+  width: 100px;
+  height: 80px;
+  background: var(--ifm-background-surface-color, #fff);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 4px;
+}
+
+/* ─── Opacity scale ──────────────────────────────────────────────────────── */
+.opacity-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0;
+}
+
+.opacity-box {
+  width: 64px;
+  height: 64px;
+  background: var(--ifm-color-primary);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}

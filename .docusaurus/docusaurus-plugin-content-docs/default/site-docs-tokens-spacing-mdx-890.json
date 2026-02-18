@@ -1,0 +1,28 @@
+{
+  "id": "tokens/spacing",
+  "title": "Spacing",
+  "description": "The spacing scale is based on a 4px grid. Each step multiplies the base unit, providing consistent, harmonious layout spacing. Source: tokens/primitives/spacing.json.",
+  "source": "@site/docs/tokens/spacing.mdx",
+  "sourceDirName": "tokens",
+  "slug": "/tokens/spacing",
+  "permalink": "/system-showcase/tokens/spacing",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "spacing",
+    "title": "Spacing",
+    "sidebar_position": 3
+  },
+  "sidebar": "tokensSidebar",
+  "previous": {
+    "title": "Typography",
+    "permalink": "/system-showcase/tokens/typography"
+  },
+  "next": {
+    "title": "Border Radius",
+    "permalink": "/system-showcase/tokens/border-radius"
+  }
+}

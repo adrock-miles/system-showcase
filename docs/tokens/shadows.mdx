@@ -1,0 +1,48 @@
+---
+id: shadows
+title: Shadows
+sidebar_position: 5
+---
+
+import { ShadowScale } from '@site/src/components/TokenShowcase';
+
+# Shadows
+
+Shadow tokens define elevation levels for UI components. Source: `tokens/primitives/shadow.json`.
+
+## Scale
+
+<ShadowScale />
+
+## Token reference
+
+| Token | CSS value | Use |
+|-------|-----------|-----|
+| `shadow.none` | none | No elevation |
+| `shadow.xs` | 0 1px 2px 0 rgba(0,0,0,0.04) | Subtle depth |
+| `shadow.sm` | 0 1px 3px 0 rgba(0,0,0,0.1) | Inputs, triggers |
+| `shadow.md` | 0 4px 6px -1px rgba(0,0,0,0.1) | Cards, popovers |
+| `shadow.lg` | 0 10px 15px -3px rgba(0,0,0,0.1) | Modals, drawers |
+| `shadow.xl` | 0 20px 25px -5px rgba(0,0,0,0.1) | Prominent floating |
+| `shadow.2xl` | 0 25px 50px -12px rgba(0,0,0,0.25) | Hero elements |
+| `shadow.inner` | inset 0 2px 4px 0 rgba(0,0,0,0.06) | Sunken inputs, wells |
+
+## CSS usage
+
+```css
+.card {
+  box-shadow: var(--shadow-md);
+}
+
+.modal {
+  box-shadow: var(--shadow-lg);
+}
+
+.input:focus {
+  box-shadow: var(--shadow-sm);
+}
+
+.input-sunken {
+  box-shadow: var(--shadow-inner);
+}
+```

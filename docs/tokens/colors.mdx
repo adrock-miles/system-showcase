@@ -1,0 +1,50 @@
+---
+id: colors
+title: Colors
+sidebar_position: 1
+---
+
+import { ColorPalette } from '@site/src/components/TokenShowcase';
+
+# Color Primitives
+
+The color palette consists of 6 hues (blue, gray, green, red, yellow, purple), each with 10 shades from 50 (lightest) to 900 (darkest).
+
+All colors follow the [Tailwind CSS](https://tailwindcss.com/docs/customizing-colors) naming convention and are sourced in `tokens/primitives/color.json`.
+
+## Palette
+
+<ColorPalette />
+
+## Token naming
+
+| Format | Example |
+|--------|---------|
+| CSS variable | `var(--color-blue-600)` |
+| SCSS variable | `$color-blue-600` |
+| TypeScript | `colorBlue600` or `tokens.color.blue['600']` |
+| Android | `@color/color_blue_600` |
+| iOS | `StyleDictionaryColor.colorBlue600` |
+
+## CSS usage
+
+```css
+.button {
+  background: var(--color-blue-600);
+  color: var(--color-white);
+}
+
+.button:hover {
+  background: var(--color-blue-700);
+}
+```
+
+## Special values
+
+In addition to the palette, the token file includes:
+
+| Token | Value | Purpose |
+|-------|-------|---------|
+| `color.white` | `#ffffff` | Pure white |
+| `color.black` | `#000000` | Pure black |
+| `color.transparent` | `transparent` | Fully transparent |

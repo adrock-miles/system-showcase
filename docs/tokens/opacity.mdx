@@ -1,0 +1,53 @@
+---
+id: opacity
+title: Opacity
+sidebar_position: 6
+---
+
+import { OpacityScale } from '@site/src/components/TokenShowcase';
+
+# Opacity
+
+Opacity tokens provide a consistent scale from fully transparent (0) to fully opaque (100). Source: `tokens/primitives/opacity.json`.
+
+## Scale
+
+<OpacityScale />
+
+## Token reference
+
+| Token | Value | Use |
+|-------|-------|-----|
+| `opacity.0` | 0 | Fully transparent (hidden) |
+| `opacity.5` | 0.05 | Nearly transparent |
+| `opacity.10` | 0.1 | Very subtle |
+| `opacity.20` | 0.2 | Subtle |
+| `opacity.25` | 0.25 | 25% opacity |
+| `opacity.30` | 0.3 | 30% opacity |
+| `opacity.40` | 0.4 | 40% opacity |
+| `opacity.50` | 0.5 | Half transparent — overlays |
+| `opacity.60` | 0.6 | 60% opacity |
+| `opacity.70` | 0.7 | 70% opacity |
+| `opacity.75` | 0.75 | 75% opacity |
+| `opacity.80` | 0.8 | Disabled states |
+| `opacity.90` | 0.9 | 90% opacity |
+| `opacity.95` | 0.95 | Near opaque |
+| `opacity.100` | 1 | Fully opaque |
+
+## CSS usage
+
+```css
+.overlay {
+  background: var(--color-black);
+  opacity: var(--opacity-50);  /* 0.5 */
+}
+
+.disabled {
+  opacity: var(--opacity-80);
+  pointer-events: none;
+}
+
+.ghost {
+  opacity: var(--opacity-0);
+}
+```

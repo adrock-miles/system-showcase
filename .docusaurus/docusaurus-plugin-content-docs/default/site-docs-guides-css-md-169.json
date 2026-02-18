@@ -1,0 +1,24 @@
+{
+  "id": "guides/css",
+  "title": "CSS Guide",
+  "description": "After running npm run build:tokens, import the generated CSS file and use tokens as CSS custom properties.",
+  "source": "@site/docs/guides/css.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/css",
+  "permalink": "/system-showcase/guides/css",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "css",
+    "title": "CSS Guide",
+    "sidebar_position": 1
+  },
+  "sidebar": "guidesSidebar",
+  "next": {
+    "title": "SCSS Guide",
+    "permalink": "/system-showcase/guides/scss"
+  }
+}

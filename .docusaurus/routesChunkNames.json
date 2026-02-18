@@ -1,0 +1,78 @@
+{
+  "/system-showcase/-e1a": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  },
+  "/system-showcase/-c9a": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/system-showcase/-468": {
+    "__comp": "a7bd4aaa",
+    "__props": "d71b4f1a"
+  },
+  "/system-showcase/-622": {
+    "__comp": "a94703ab"
+  },
+  "/system-showcase/guides/android-d55": {
+    "__comp": "17896441",
+    "content": "a1dd705f"
+  },
+  "/system-showcase/guides/css-2c9": {
+    "__comp": "17896441",
+    "content": "169abaea"
+  },
+  "/system-showcase/guides/figma-export-e24": {
+    "__comp": "17896441",
+    "content": "7b3911aa"
+  },
+  "/system-showcase/guides/ios-e2f": {
+    "__comp": "17896441",
+    "content": "9c968cb6"
+  },
+  "/system-showcase/guides/scss-80b": {
+    "__comp": "17896441",
+    "content": "cec0bbcd"
+  },
+  "/system-showcase/guides/typescript-0ea": {
+    "__comp": "17896441",
+    "content": "2af6d897"
+  },
+  "/system-showcase/intro-75c": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/system-showcase/tokens/border-radius-20b": {
+    "__comp": "17896441",
+    "content": "10aee117"
+  },
+  "/system-showcase/tokens/colors-2d6": {
+    "__comp": "17896441",
+    "content": "6b38cc94"
+  },
+  "/system-showcase/tokens/opacity-697": {
+    "__comp": "17896441",
+    "content": "781e2732"
+  },
+  "/system-showcase/tokens/semantic-colors-595": {
+    "__comp": "17896441",
+    "content": "981786ca"
+  },
+  "/system-showcase/tokens/shadows-440": {
+    "__comp": "17896441",
+    "content": "929adfcd"
+  },
+  "/system-showcase/tokens/spacing-787": {
+    "__comp": "17896441",
+    "content": "890de640"
+  },
+  "/system-showcase/tokens/typography-65b": {
+    "__comp": "17896441",
+    "content": "a4ce8e6a"
+  }
+}

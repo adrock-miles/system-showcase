@@ -1,0 +1,104 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/system-showcase/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/system-showcase/",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "guides/android",
+              "path": "/system-showcase/guides/android",
+              "sidebar": "guidesSidebar"
+            },
+            {
+              "id": "guides/css",
+              "path": "/system-showcase/guides/css",
+              "sidebar": "guidesSidebar"
+            },
+            {
+              "id": "guides/figma-export",
+              "path": "/system-showcase/guides/figma-export",
+              "sidebar": "guidesSidebar"
+            },
+            {
+              "id": "guides/ios",
+              "path": "/system-showcase/guides/ios",
+              "sidebar": "guidesSidebar"
+            },
+            {
+              "id": "guides/scss",
+              "path": "/system-showcase/guides/scss",
+              "sidebar": "guidesSidebar"
+            },
+            {
+              "id": "guides/typescript",
+              "path": "/system-showcase/guides/typescript",
+              "sidebar": "guidesSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/system-showcase/intro",
+              "sidebar": "tokensSidebar"
+            },
+            {
+              "id": "tokens/border-radius",
+              "path": "/system-showcase/tokens/border-radius",
+              "sidebar": "tokensSidebar"
+            },
+            {
+              "id": "tokens/colors",
+              "path": "/system-showcase/tokens/colors",
+              "sidebar": "tokensSidebar"
+            },
+            {
+              "id": "tokens/opacity",
+              "path": "/system-showcase/tokens/opacity",
+              "sidebar": "tokensSidebar"
+            },
+            {
+              "id": "tokens/semantic-colors",
+              "path": "/system-showcase/tokens/semantic-colors",
+              "sidebar": "tokensSidebar"
+            },
+            {
+              "id": "tokens/shadows",
+              "path": "/system-showcase/tokens/shadows",
+              "sidebar": "tokensSidebar"
+            },
+            {
+              "id": "tokens/spacing",
+              "path": "/system-showcase/tokens/spacing",
+              "sidebar": "tokensSidebar"
+            },
+            {
+              "id": "tokens/typography",
+              "path": "/system-showcase/tokens/typography",
+              "sidebar": "tokensSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tokensSidebar": {
+              "link": {
+                "path": "/system-showcase/intro",
+                "label": "intro"
+              }
+            },
+            "guidesSidebar": {
+              "link": {
+                "path": "/system-showcase/guides/css",
+                "label": "guides/css"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

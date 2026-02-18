@@ -2,12 +2,13 @@
   "name": "figma-tokens-system",
   "version": "1.0.0",
   "description": "Design token transformation system using Style Dictionary for Figma exports",
-  "type": "module",
   "scripts": {
-    "build": "node sd.config.js",
-    "build:watch": "nodemon --watch tokens --ext json sd.config.js",
-    "clean": "rm -rf build",
-    "docs": "open docs/index.html"
+    "build:tokens": "node sd.config.mjs",
+    "build:tokens:watch": "nodemon --watch tokens --ext json sd.config.mjs",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear"
   },
   "keywords": [
     "design-tokens",
@@ -20,9 +21,20 @@
     "typescript"
   ],
   "dependencies": {
+    "@docusaurus/core": "^3.6.0",
+    "@docusaurus/preset-classic": "^3.6.0",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "style-dictionary": "^4.2.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@docusaurus/module-type-aliases": "^3.6.0",
+    "@docusaurus/tsconfig": "^3.6.0",
+    "@docusaurus/types": "^3.6.0",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.0.0"
   }
 }

@@ -5,7 +5,10 @@
       "Bash(python3:*)",
       "Bash(source:*)",
       "Bash(echo:*)",
-      "Bash(brew install:*)"
+      "Bash(brew install:*)",
+      "Bash(find:*)",
+      "Bash(npm run build:tokens:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }

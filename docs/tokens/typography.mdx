@@ -1,0 +1,61 @@
+---
+id: typography
+title: Typography
+sidebar_position: 2
+---
+
+import { TypeScale, FontWeights } from '@site/src/components/TokenShowcase';
+
+# Typography
+
+Typography tokens define font sizes, weights, line heights, and letter spacing. Source: `tokens/primitives/typography.json`.
+
+## Font Families
+
+| Token | Value | Use |
+|-------|-------|-----|
+| `font.family.sans` | Inter, system-ui, … | Primary UI text |
+| `font.family.serif` | Georgia, Times New Roman | Editorial content |
+| `font.family.mono` | JetBrains Mono, Fira Code, … | Code blocks |
+
+## Type Scale
+
+<TypeScale />
+
+## Font Weights
+
+<FontWeights />
+
+## Line Heights
+
+| Token | Value | Use |
+|-------|-------|-----|
+| `font.lineHeight.none` | 1 | No leading |
+| `font.lineHeight.tight` | 1.25 | Headings |
+| `font.lineHeight.snug` | 1.375 | — |
+| `font.lineHeight.normal` | 1.5 | Body text |
+| `font.lineHeight.relaxed` | 1.625 | Reading-optimized |
+| `font.lineHeight.loose` | 2 | Widely spaced |
+
+## Letter Spacing
+
+| Token | Value | Use |
+|-------|-------|-----|
+| `font.letterSpacing.tighter` | -0.05em | — |
+| `font.letterSpacing.tight` | -0.025em | Display headings |
+| `font.letterSpacing.normal` | 0em | Default |
+| `font.letterSpacing.wide` | 0.025em | Small caps |
+| `font.letterSpacing.wider` | 0.05em | — |
+| `font.letterSpacing.widest` | 0.1em | All-caps labels |
+
+## CSS usage
+
+```css
+.heading {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-4-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-line-height-tight);
+  letter-spacing: var(--font-letter-spacing-tight);
+}
+```

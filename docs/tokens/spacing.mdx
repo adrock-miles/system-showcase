@@ -1,0 +1,50 @@
+---
+id: spacing
+title: Spacing
+sidebar_position: 3
+---
+
+import { SpacingScale } from '@site/src/components/TokenShowcase';
+
+# Spacing
+
+The spacing scale is based on a **4px grid**. Each step multiplies the base unit, providing consistent, harmonious layout spacing. Source: `tokens/primitives/spacing.json`.
+
+## Scale
+
+<SpacingScale />
+
+## Token naming
+
+| Format | Example (spacing.4 = 16px) |
+|--------|---------------------------|
+| CSS variable | `var(--spacing-4)` |
+| SCSS variable | `$spacing-4` |
+| TypeScript | `spacing4` or `tokens.spacing['4']` |
+| Android | `@dimen/spacing_4` |
+
+## CSS usage
+
+```css
+.card {
+  padding: var(--spacing-6);        /* 24px */
+  margin-bottom: var(--spacing-8);  /* 32px */
+  gap: var(--spacing-4);            /* 16px */
+}
+
+.button {
+  padding: var(--spacing-2) var(--spacing-4);  /* 8px 16px */
+}
+```
+
+## Design guidelines
+
+| Use case | Recommended step |
+|----------|-----------------|
+| Icon padding | spacing.1 (4px) |
+| Inline element gap | spacing.2 (8px) |
+| Component internal padding | spacing.4 (16px) |
+| Component gap | spacing.6 (24px) |
+| Section spacing | spacing.12 (48px) |
+| Page section padding | spacing.24 (96px) |
+| Hero section spacing | spacing.64 (256px) |

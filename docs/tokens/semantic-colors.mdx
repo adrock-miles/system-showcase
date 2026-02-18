@@ -1,0 +1,52 @@
+---
+id: semantic-colors
+title: Semantic Colors
+sidebar_position: 7
+---
+
+import { SemanticColorTable } from '@site/src/components/TokenShowcase';
+
+# Semantic Colors
+
+Semantic tokens give purpose-driven names to primitive values. Instead of using `color.blue.600` directly, your components reference `semantic.color.action.primary` — making it trivial to retheme the entire product by updating one token.
+
+Source: `tokens/semantic/color.json`
+
+## All semantic tokens
+
+<SemanticColorTable />
+
+## Categories
+
+| Category | Purpose |
+|----------|---------|
+| `semantic.color.background.*` | Page and section backgrounds |
+| `semantic.color.surface.*` | Card, modal, and overlay surfaces |
+| `semantic.color.text.*` | Body text, links, disabled states |
+| `semantic.color.border.*` | Dividers, focus rings, error borders |
+| `semantic.color.feedback.*` | Success, warning, error, info states |
+| `semantic.color.action.*` | Buttons and interactive element colors |
+
+## CSS usage (with `outputReferences: true`)
+
+When built with `outputReferences: true`, semantic tokens reference primitive tokens via CSS `var()`:
+
+```css
+:root {
+  --color-blue-600: #2563eb;
+  --semantic-color-action-primary: var(--color-blue-600);
+}
+```
+
+This allows runtime theming — change `--color-blue-600` and all semantic references update automatically.
+
+```css
+.button-primary {
+  background: var(--semantic-color-action-primary);
+  color: var(--semantic-color-action-primary-foreground);
+}
+
+.button-primary:hover {
+  background: var(--semantic-color-action-primary-hover);
+}
+```

@@ -1,0 +1,24 @@
+{
+  "id": "intro",
+  "title": "Introduction",
+  "description": "A production-ready design token pipeline that transforms Figma exports into platform-specific code.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/system-showcase/intro",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "intro",
+    "title": "Introduction",
+    "sidebar_position": 1
+  },
+  "sidebar": "tokensSidebar",
+  "next": {
+    "title": "Colors",
+    "permalink": "/system-showcase/tokens/colors"
+  }
+}

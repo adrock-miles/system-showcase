@@ -1,0 +1,28 @@
+{
+  "id": "tokens/border-radius",
+  "title": "Border Radius",
+  "description": "Border radius tokens range from sharp corners (none) to full pill shapes (full). Source: tokens/primitives/border-radius.json.",
+  "source": "@site/docs/tokens/border-radius.mdx",
+  "sourceDirName": "tokens",
+  "slug": "/tokens/border-radius",
+  "permalink": "/system-showcase/tokens/border-radius",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "border-radius",
+    "title": "Border Radius",
+    "sidebar_position": 4
+  },
+  "sidebar": "tokensSidebar",
+  "previous": {
+    "title": "Spacing",
+    "permalink": "/system-showcase/tokens/spacing"
+  },
+  "next": {
+    "title": "Shadows",
+    "permalink": "/system-showcase/tokens/shadows"
+  }
+}

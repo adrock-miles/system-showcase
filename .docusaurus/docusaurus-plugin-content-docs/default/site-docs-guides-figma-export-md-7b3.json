@@ -1,0 +1,24 @@
+{
+  "id": "guides/figma-export",
+  "title": "Figma Export Guide",
+  "description": "This guide covers how to export design tokens from Figma into the W3C DTCG JSON format used by this system.",
+  "source": "@site/docs/guides/figma-export.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/figma-export",
+  "permalink": "/system-showcase/guides/figma-export",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "figma-export",
+    "title": "Figma Export Guide",
+    "sidebar_position": 6
+  },
+  "sidebar": "guidesSidebar",
+  "previous": {
+    "title": "TypeScript Guide",
+    "permalink": "/system-showcase/guides/typescript"
+  }
+}

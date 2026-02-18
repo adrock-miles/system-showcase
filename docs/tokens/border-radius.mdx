@@ -1,0 +1,45 @@
+---
+id: border-radius
+title: Border Radius
+sidebar_position: 4
+---
+
+import { RadiusScale } from '@site/src/components/TokenShowcase';
+
+# Border Radius
+
+Border radius tokens range from sharp corners (`none`) to full pill shapes (`full`). Source: `tokens/primitives/border-radius.json`.
+
+## Scale
+
+<RadiusScale />
+
+## Token reference
+
+| Token | Value | Use |
+|-------|-------|-----|
+| `borderRadius.none` | 0px | Sharp corners, tables |
+| `borderRadius.xs` | 2px | Extra small, subtle rounding |
+| `borderRadius.sm` | 4px | Inputs, badges |
+| `borderRadius.md` | 6px | Buttons, cards (default) |
+| `borderRadius.lg` | 8px | Modals, panels |
+| `borderRadius.xl` | 12px | Extra large elements |
+| `borderRadius.2xl` | 16px | Floating elements |
+| `borderRadius.3xl` | 24px | Prominent cards |
+| `borderRadius.full` | 9999px | Pills, toggles, avatars |
+
+## CSS usage
+
+```css
+.button {
+  border-radius: var(--border-radius-md);  /* 6px */
+}
+
+.badge {
+  border-radius: var(--border-radius-full);  /* pill */
+}
+
+.modal {
+  border-radius: var(--border-radius-lg);  /* 8px */
+}
+```

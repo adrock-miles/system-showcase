@@ -1,0 +1,28 @@
+{
+  "id": "guides/android",
+  "title": "Android Guide",
+  "description": "Two XML resource files are generated: colors.xml and dimens.xml.",
+  "source": "@site/docs/guides/android.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/android",
+  "permalink": "/system-showcase/guides/android",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "android",
+    "title": "Android Guide",
+    "sidebar_position": 3
+  },
+  "sidebar": "guidesSidebar",
+  "previous": {
+    "title": "SCSS Guide",
+    "permalink": "/system-showcase/guides/scss"
+  },
+  "next": {
+    "title": "iOS Guide",
+    "permalink": "/system-showcase/guides/ios"
+  }
+}

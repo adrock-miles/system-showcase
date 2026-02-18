@@ -1,0 +1,28 @@
+{
+  "id": "guides/ios",
+  "title": "iOS Guide",
+  "description": "Two Swift files are generated: StyleDictionaryColor.swift and StyleDictionarySize.swift.",
+  "source": "@site/docs/guides/ios.md",
+  "sourceDirName": "guides",
+  "slug": "/guides/ios",
+  "permalink": "/system-showcase/guides/ios",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "ios",
+    "title": "iOS Guide",
+    "sidebar_position": 4
+  },
+  "sidebar": "guidesSidebar",
+  "previous": {
+    "title": "Android Guide",
+    "permalink": "/system-showcase/guides/android"
+  },
+  "next": {
+    "title": "TypeScript Guide",
+    "permalink": "/system-showcase/guides/typescript"
+  }
+}
