@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Design token transformation system using Style Dictionary for Figma exports",
   "scripts": {
-    "build:tokens": "node sd.config.mjs",
-    "build:tokens:watch": "nodemon --watch tokens --ext json sd.config.mjs",
+    "build:tokens": "node pipeline/sd.config.mjs",
+    "build:tokens:watch": "nodemon --watch pipeline/tokens --ext json pipeline/sd.config.mjs",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",

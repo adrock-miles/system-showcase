@@ -25,16 +25,24 @@ npm run build
 
 ```
 system-showcase/
-├── tokens/
-│   ├── primitives/
-│   │   ├── color.json          — raw color palette (blues, grays, greens, reds...)
-│   │   ├── spacing.json        — spacing scale (4px base unit)
-│   │   ├── typography.json     — font sizes, weights, line heights, families
-│   │   ├── border-radius.json  — corner radius values
-│   │   ├── shadow.json         — elevation shadows (xs → 2xl + inner)
-│   │   └── opacity.json        — opacity scale (0–100)
-│   └── semantic/
-│       └── color.json          — role-based aliases (text, surface, action...)
+├── pipeline/                   — token transformation pipeline
+│   ├── tokens/
+│   │   ├── primitives/
+│   │   │   ├── color.json          — raw color palette (blues, grays, greens, reds...)
+│   │   │   ├── spacing.json        — spacing scale (4px base unit)
+│   │   │   ├── typography.json     — font sizes, weights, line heights, families
+│   │   │   ├── border-radius.json  — corner radius values
+│   │   │   ├── shadow.json         — elevation shadows (xs → 2xl + inner)
+│   │   │   └── opacity.json        — opacity scale (0–100)
+│   │   └── semantic/
+│   │       └── color.json          — role-based aliases (text, surface, action...)
+│   ├── sd.config.mjs               — Style Dictionary configuration
+│   └── dist/                       — generated token outputs (git-ignored)
+│       ├── css/variables.css
+│       ├── scss/_variables.scss + _map.scss
+│       ├── android/colors.xml + dimens.xml
+│       ├── ios/StyleDictionaryColor.swift + StyleDictionarySize.swift
+│       └── ts/tokens.ts
 ├── docs/                       — Docusaurus markdown/MDX pages
 │   ├── intro.md
 │   ├── tokens/                 — token reference pages (with live component previews)
@@ -44,14 +52,7 @@ system-showcase/
 │   ├── pages/index.tsx               — landing page
 │   └── css/custom.css                — Docusaurus theme overrides
 ├── .github/workflows/deploy.yml — GitHub Actions: build + deploy to GitHub Pages
-├── sd.config.mjs               — Style Dictionary configuration
 ├── docusaurus.config.ts        — Docusaurus site configuration
-├── dist/                       — generated token outputs (git-ignored)
-│   ├── css/variables.css
-│   ├── scss/_variables.scss + _map.scss
-│   ├── android/colors.xml + dimens.xml
-│   ├── ios/StyleDictionaryColor.swift + StyleDictionarySize.swift
-│   └── ts/tokens.ts
 └── build/                      — Docusaurus static site output (git-ignored)
 ```
 
@@ -102,7 +103,7 @@ Tokens use the [W3C Design Token Community Group](https://tr.designtokens.org/fo
 
 ## Platform Outputs
 
-### CSS (`dist/css/variables.css`)
+### CSS (`pipeline/dist/css/variables.css`)
 ```css
 :root {
   --color-blue-500: #3b82f6;
@@ -111,14 +112,14 @@ Tokens use the [W3C Design Token Community Group](https://tr.designtokens.org/fo
 ```
 Semantic tokens output as `var()` references (great for runtime theming).
 
-### SCSS (`dist/scss/_variables.scss`)
+### SCSS (`pipeline/dist/scss/_variables.scss`)
 ```scss
 $color-blue-500: #3b82f6;
 $semantic-color-action-primary: $color-blue-600;
 ```
 Also generates `_map.scss` with a nested `$tokens` Sass map.
 
-### Android (`dist/android/`)
+### Android (`pipeline/dist/android/`)
 ```xml
 <!-- colors.xml -->
 <color name="color_blue_500">#ff3b82f6</color>
@@ -127,7 +128,7 @@ Also generates `_map.scss` with a nested `$tokens` Sass map.
 <dimen name="spacing_4">16.00dp</dimen>
 ```
 
-### iOS / Swift (`dist/ios/`)
+### iOS / Swift (`pipeline/dist/ios/`)
 ```swift
 // StyleDictionaryColor.swift
 public class StyleDictionaryColor {
@@ -140,7 +141,7 @@ public class StyleDictionarySize {
 }
 ```
 
-### TypeScript (`dist/ts/tokens.ts`)
+### TypeScript (`pipeline/dist/ts/tokens.ts`)
 ```typescript
 export const colorBlue500 = "#3b82f6" as const;
 export const spacingFour = "1rem" as const;
@@ -159,7 +160,7 @@ export const tokens = {
 ### Via Tokens Studio Plugin
 1. Install **Tokens Studio for Figma**
 2. Export as **W3C JSON format**
-3. Replace files in `tokens/` with the exported files
+3. Replace files in `pipeline/tokens/` with the exported files
 4. Run `npm run build:tokens`
 
 ### Via Figma Variables REST API
@@ -173,7 +174,7 @@ Use a transform script to convert Figma's variable format to W3C DTCG.
 ```bash
 npm run build:tokens:watch
 ```
-Automatically rebuilds on any `.json` file change in `tokens/`.
+Automatically rebuilds on any `.json` file change in `pipeline/tokens/`.
 
 ---
 
@@ -203,24 +204,24 @@ To enable: go to **GitHub repo → Settings → Pages → Source → GitHub Acti
 ## Extending Style Dictionary
 
 ### Adding a new platform
-Edit `sd.config.mjs` and add a new entry under `platforms`:
+Edit `pipeline/sd.config.mjs` and add a new entry under `platforms`:
 
 ```js
 platforms: {
   // ... existing platforms ...
   flutter: {
     transformGroup: 'flutter',
-    buildPath: 'dist/flutter/',
+    buildPath: 'pipeline/dist/flutter/',
     files: [{ destination: 'tokens.dart', format: 'flutter/class.dart' }],
   },
 }
 ```
 
 ### Adding a new token file
-Create a new JSON file anywhere in `tokens/` following the W3C format. Style Dictionary will automatically pick it up (glob: `tokens/**/*.json`).
+Create a new JSON file anywhere in `pipeline/tokens/` following the W3C format. Style Dictionary will automatically pick it up (glob: `pipeline/tokens/**/*.json`).
 
 ### Custom transforms & formats
-Register in `sd.config.mjs` using `StyleDictionary.registerTransform()` and `StyleDictionary.registerFormat()`.
+Register in `pipeline/sd.config.mjs` using `StyleDictionary.registerTransform()` and `StyleDictionary.registerFormat()`.
 
 ---
 

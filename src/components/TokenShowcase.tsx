@@ -8,13 +8,13 @@ import React from 'react';
 
 // ─── Raw token data (imported at build time via webpack) ───────────────────
 
-import colorData from '../../tokens/primitives/color.json';
-import typographyData from '../../tokens/primitives/typography.json';
-import spacingData from '../../tokens/primitives/spacing.json';
-import borderRadiusData from '../../tokens/primitives/border-radius.json';
-import shadowData from '../../tokens/primitives/shadow.json';
-import opacityData from '../../tokens/primitives/opacity.json';
-import semanticColorData from '../../tokens/semantic/color.json';
+import colorData from '../../pipeline/tokens/primitives/color.json';
+import typographyData from '../../pipeline/tokens/primitives/typography.json';
+import spacingData from '../../pipeline/tokens/primitives/spacing.json';
+import borderRadiusData from '../../pipeline/tokens/primitives/border-radius.json';
+import shadowData from '../../pipeline/tokens/primitives/shadow.json';
+import opacityData from '../../pipeline/tokens/primitives/opacity.json';
+import semanticColorData from '../../pipeline/tokens/semantic/color.json';
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 
