@@ -114,7 +114,7 @@ const sd = new StyleDictionary({
    * Token source files — matches all JSON files in the tokens/ directory.
    * Figma plugins (Tokens Studio, Variables) export to this directory.
    */
-  source: ['tokens/**/*.json'],
+  source: ['pipeline/tokens/**/*.json'],
 
   /**
    * Enable W3C DTCG format support.
@@ -127,7 +127,7 @@ const sd = new StyleDictionary({
     // ── CSS Custom Properties ─────────────────────────────────────────────────
     css: {
       transformGroup: 'css',
-      buildPath: 'dist/css/',
+      buildPath: 'pipeline/dist/css/',
       files: [
         {
           destination: 'variables.css',
@@ -148,7 +148,7 @@ const sd = new StyleDictionary({
     // ── SCSS Variables ────────────────────────────────────────────────────────
     scss: {
       transformGroup: 'scss',
-      buildPath: 'dist/scss/',
+      buildPath: 'pipeline/dist/scss/',
       files: [
         {
           destination: '_variables.scss',
@@ -168,7 +168,7 @@ const sd = new StyleDictionary({
     // ── Android XML Resources ─────────────────────────────────────────────────
     android: {
       transformGroup: 'android',
-      buildPath: 'dist/android/',
+      buildPath: 'pipeline/dist/android/',
       files: [
         {
           /**
@@ -194,7 +194,7 @@ const sd = new StyleDictionary({
     // ── iOS Swift ─────────────────────────────────────────────────────────────
     ios: {
       transformGroup: 'ios-swift',
-      buildPath: 'dist/ios/',
+      buildPath: 'pipeline/dist/ios/',
       files: [
         {
           /**
@@ -222,7 +222,7 @@ const sd = new StyleDictionary({
     // ── TypeScript / JavaScript ───────────────────────────────────────────────
     typescript: {
       transforms: ['attribute/cti', 'name/camelCase', 'color/hex', 'size/rem'],
-      buildPath: 'dist/ts/',
+      buildPath: 'pipeline/dist/ts/',
       files: [
         {
           /**
@@ -243,14 +243,14 @@ try {
   await sd.buildAllPlatforms();
   console.log('\n✅ Design tokens built successfully!\n');
   console.log('  Outputs:');
-  console.log('  ├── dist/css/variables.css');
-  console.log('  ├── dist/scss/_variables.scss');
-  console.log('  ├── dist/scss/_map.scss');
-  console.log('  ├── dist/android/colors.xml');
-  console.log('  ├── dist/android/dimens.xml');
-  console.log('  ├── dist/ios/StyleDictionaryColor.swift');
-  console.log('  ├── dist/ios/StyleDictionarySize.swift');
-  console.log('  └── dist/ts/tokens.ts\n');
+  console.log('  ├── pipeline/dist/css/variables.css');
+  console.log('  ├── pipeline/dist/scss/_variables.scss');
+  console.log('  ├── pipeline/dist/scss/_map.scss');
+  console.log('  ├── pipeline/dist/android/colors.xml');
+  console.log('  ├── pipeline/dist/android/dimens.xml');
+  console.log('  ├── pipeline/dist/ios/StyleDictionaryColor.swift');
+  console.log('  ├── pipeline/dist/ios/StyleDictionarySize.swift');
+  console.log('  └── pipeline/dist/ts/tokens.ts\n');
 } catch (err) {
   console.error('\n❌ Build failed:', err.message);
   process.exit(1);
