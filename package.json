@@ -1,0 +1,28 @@
+{
+  "name": "figma-tokens-system",
+  "version": "1.0.0",
+  "description": "Design token transformation system using Style Dictionary for Figma exports",
+  "type": "module",
+  "scripts": {
+    "build": "node sd.config.js",
+    "build:watch": "nodemon --watch tokens --ext json sd.config.js",
+    "clean": "rm -rf build",
+    "docs": "open docs/index.html"
+  },
+  "keywords": [
+    "design-tokens",
+    "style-dictionary",
+    "figma",
+    "css",
+    "scss",
+    "android",
+    "ios",
+    "typescript"
+  ],
+  "dependencies": {
+    "style-dictionary": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

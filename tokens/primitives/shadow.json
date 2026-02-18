@@ -1,0 +1,93 @@
+{
+  "shadow": {
+    "none": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "0px",
+        "color": "rgba(0,0,0,0)"
+      },
+      "$type": "shadow",
+      "$description": "No shadow"
+    },
+    "xs": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0px",
+        "color": "rgba(0, 0, 0, 0.04)"
+      },
+      "$type": "shadow",
+      "$description": "Extra small shadow — subtle depth"
+    },
+    "sm": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "3px",
+        "spread": "0px",
+        "color": "rgba(0, 0, 0, 0.1)"
+      },
+      "$type": "shadow",
+      "$description": "Small shadow — inputs, dropdown triggers"
+    },
+    "md": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "4px",
+        "blur": "6px",
+        "spread": "-1px",
+        "color": "rgba(0, 0, 0, 0.1)"
+      },
+      "$type": "shadow",
+      "$description": "Medium shadow — cards, popovers"
+    },
+    "lg": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "10px",
+        "blur": "15px",
+        "spread": "-3px",
+        "color": "rgba(0, 0, 0, 0.1)"
+      },
+      "$type": "shadow",
+      "$description": "Large shadow — modals, drawers"
+    },
+    "xl": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "20px",
+        "blur": "25px",
+        "spread": "-5px",
+        "color": "rgba(0, 0, 0, 0.1)"
+      },
+      "$type": "shadow",
+      "$description": "Extra large shadow — prominent floating elements"
+    },
+    "2xl": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "25px",
+        "blur": "50px",
+        "spread": "-12px",
+        "color": "rgba(0, 0, 0, 0.25)"
+      },
+      "$type": "shadow",
+      "$description": "2x large shadow — hero elements"
+    },
+    "inner": {
+      "$value": {
+        "offsetX": "0px",
+        "offsetY": "2px",
+        "blur": "4px",
+        "spread": "0px",
+        "color": "rgba(0, 0, 0, 0.06)",
+        "inset": true
+      },
+      "$type": "shadow",
+      "$description": "Inner shadow — sunken inputs, wells"
+    }
+  }
+}

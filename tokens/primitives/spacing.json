@@ -1,0 +1,33 @@
+{
+  "spacing": {
+    "0":  { "$value": "0px",   "$type": "dimension", "$description": "No spacing" },
+    "px": { "$value": "1px",   "$type": "dimension", "$description": "Single pixel" },
+    "0.5":{ "$value": "2px",   "$type": "dimension", "$description": "0.5 unit — micro spacing" },
+    "1":  { "$value": "4px",   "$type": "dimension", "$description": "1 unit (4px base grid)" },
+    "1.5":{ "$value": "6px",   "$type": "dimension", "$description": "1.5 units" },
+    "2":  { "$value": "8px",   "$type": "dimension", "$description": "2 units — tight spacing" },
+    "2.5":{ "$value": "10px",  "$type": "dimension", "$description": "2.5 units" },
+    "3":  { "$value": "12px",  "$type": "dimension", "$description": "3 units" },
+    "3.5":{ "$value": "14px",  "$type": "dimension", "$description": "3.5 units" },
+    "4":  { "$value": "16px",  "$type": "dimension", "$description": "4 units — base spacing unit" },
+    "5":  { "$value": "20px",  "$type": "dimension", "$description": "5 units" },
+    "6":  { "$value": "24px",  "$type": "dimension", "$description": "6 units — comfortable spacing" },
+    "7":  { "$value": "28px",  "$type": "dimension", "$description": "7 units" },
+    "8":  { "$value": "32px",  "$type": "dimension", "$description": "8 units — section spacing" },
+    "9":  { "$value": "36px",  "$type": "dimension", "$description": "9 units" },
+    "10": { "$value": "40px",  "$type": "dimension", "$description": "10 units" },
+    "11": { "$value": "44px",  "$type": "dimension", "$description": "11 units — touch target minimum" },
+    "12": { "$value": "48px",  "$type": "dimension", "$description": "12 units" },
+    "14": { "$value": "56px",  "$type": "dimension", "$description": "14 units" },
+    "16": { "$value": "64px",  "$type": "dimension", "$description": "16 units — large layout spacing" },
+    "20": { "$value": "80px",  "$type": "dimension", "$description": "20 units" },
+    "24": { "$value": "96px",  "$type": "dimension", "$description": "24 units — section padding" },
+    "28": { "$value": "112px", "$type": "dimension", "$description": "28 units" },
+    "32": { "$value": "128px", "$type": "dimension", "$description": "32 units" },
+    "36": { "$value": "144px", "$type": "dimension", "$description": "36 units" },
+    "40": { "$value": "160px", "$type": "dimension", "$description": "40 units" },
+    "48": { "$value": "192px", "$type": "dimension", "$description": "48 units" },
+    "56": { "$value": "224px", "$type": "dimension", "$description": "56 units" },
+    "64": { "$value": "256px", "$type": "dimension", "$description": "64 units — hero section spacing" }
+  }
+}

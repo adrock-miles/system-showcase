@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(python3:*)",
+      "Bash(source:*)",
+      "Bash(echo:*)",
+      "Bash(brew install:*)"
+    ]
+  }
+}
