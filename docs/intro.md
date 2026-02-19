@@ -4,7 +4,7 @@ title: Introduction
 sidebar_position: 1
 ---
 
-# Figma Tokens System
+# Token Showcase
 
 A production-ready design token pipeline that transforms Figma exports into platform-specific code.
 

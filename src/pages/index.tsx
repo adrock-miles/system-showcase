@@ -8,7 +8,7 @@ function HeroBanner() {
   return (
     <div className={styles.heroBanner}>
       <div className="container">
-        <h1 className={styles.heroTitle}>Figma Tokens System</h1>
+        <h1 className={styles.heroTitle}>Token Showcase</h1>
         <p className={styles.heroSubtitle}>
           Design tokens defined once in Figma, transformed for every platform —
           CSS, SCSS, Android, iOS, and TypeScript.

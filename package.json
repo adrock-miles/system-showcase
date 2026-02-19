@@ -1,5 +1,5 @@
 {
-  "name": "figma-tokens-system",
+  "name": "token-showcase",
   "version": "1.0.0",
   "description": "Design token transformation system using Style Dictionary for Figma exports",
   "scripts": {

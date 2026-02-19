@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Figma Tokens System',
+  title: 'Token Showcase',
   tagline: 'Design tokens transformed for every platform',
   favicon: 'img/favicon.ico',
 
@@ -44,7 +44,7 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: 'Figma Tokens System',
+      title: 'Token Showcase',
       items: [
         {
           type: 'docSidebar',
@@ -92,7 +92,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Figma Tokens System. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Token Showcase. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
