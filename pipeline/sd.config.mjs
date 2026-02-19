@@ -19,8 +19,8 @@
 import StyleDictionary from 'style-dictionary';
 
 // ─── Type filter helpers ──────────────────────────────────────────────────────
-const isColor     = (token) => token.type === 'color';
-const isDimension = (token) => token.type === 'dimension';
+const isColor     = (token) => (token.$type ?? token.type) === 'color';
+const isDimension = (token) => (token.$type ?? token.type) === 'dimension';
 
 // ─── Register custom transforms ──────────────────────────────────────────────
 
@@ -65,8 +65,10 @@ StyleDictionary.registerFormat({
 
     const exports = dictionary.allTokens
       .map((token) => {
-        const val = JSON.stringify(token.value);
-        const comment = token.comment ? ` // ${token.comment}` : '';
+        const val = JSON.stringify(token.$value ?? token.value);
+        const comment = token.$description || token.comment
+          ? ` // ${token.$description || token.comment}`
+          : '';
         return `export const ${token.name} = ${val} as const;${comment}`;
       })
       .join('\n');
@@ -102,7 +104,7 @@ function buildNestedObject(allTokens) {
       if (!cursor[key]) cursor[key] = {};
       cursor = cursor[key];
     }
-    cursor[token.path[token.path.length - 1]] = token.value;
+    cursor[token.path[token.path.length - 1]] = token.$value ?? token.value;
   }
   return result;
 }

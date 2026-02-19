@@ -24,7 +24,7 @@ Or import in your CSS entry point:
 Or in your bundler entry file:
 
 ```js
-import 'figma-tokens-system/dist/css/variables.css';
+import 'token-showcase/dist/css/variables.css';
 ```
 
 ## Usage examples
